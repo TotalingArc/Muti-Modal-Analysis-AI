@@ -13,15 +13,14 @@ Python 3.x
 OpenAI 
 Python API: openai
 
-# Install the required dependencies:
+## Install the required dependencies:
 ```bash
 pip install openai argparse
 ```
 
-Getting Started
+## Getting Started
 1. Set up OpenAI API Key
 To authenticate the API, you’ll need to configure your OpenAI API key. Add this in the code where you see openai.OpenAI():
-
 ```python
 openai.api_key = 'your-api-key'
 ```
@@ -33,19 +32,17 @@ Sentiment Classification
 Image Analysis
 Text-to-SQL Translation:
 This function translates a natural language question into an SQL query. To run the translation:
-
 ```bash
 python text_to_sql.py "<natural_language_question>"
 ```
 
 Sentiment Classification:
 This function determines whether the sentiment of the input text is positive or negative. To classify sentiment:
-
 ```bash
 python sentiment_analysis.py "<text_to_classify>"
 ```
 
-Image Analysis:
+## Image Analysis:
 This function answers questions about images provided via URLs. To analyze an image:
 
 ```bash
