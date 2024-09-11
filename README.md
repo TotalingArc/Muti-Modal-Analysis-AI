@@ -12,9 +12,10 @@ Prerequisites
 You need the following:
 
 Python 3.x
-OpenAI Python API: openai
-Install the required dependencies:
+OpenAI 
+Python API: openai
 
+Install the required dependencies:
 ```bash
 pip install openai argparse
 ```
@@ -38,6 +39,7 @@ This function translates a natural language question into an SQL query. To run t
 ```bash
 python text_to_sql.py "<natural_language_question>"
 ```
+
 Sentiment Classification:
 This function determines whether the sentiment of the input text is positive or negative. To classify sentiment:
 
@@ -62,7 +64,6 @@ def create_prompt(question):
 ```
 2. Sentiment Classification
 The create_prompt function in the sentiment classification code creates a prompt that queries the sentiment of a given text. The LLM is called using the call_llm function to return the classification.
-
 ```python
 def create_prompt(text):
     """Creates input prompt for sentiment analysis."""
@@ -71,7 +72,6 @@ def create_prompt(text):
 
 3. Image Analysis
 The analyze_image function takes an image URL and a question as input. It sends both to the OpenAI API and retrieves an answer about the image.
-
 ```python
 def analyze_image(image_url, question):
     """Answer question about input image."""
@@ -84,28 +84,24 @@ Text-to-SQL Example:
 python text_to_sql.py "How many customers are in the city of New York?"
 ```
 Expected Output:
-
 ```sql
 SELECT COUNT(*) FROM Customers WHERE City = 'New York';
 ```
 
 Sentiment Classification Example:
-
 ```bash
 python sentiment_analysis.py "I love this product!"
 ```
 Expected Output:
-
-mathematica
-Copy code
+```mathematica
 Positive
-Image Analysis Example:
+```
 
+Image Analysis Example:
 ```bash
 python image_analysis.py "https://example.com/image.jpg" "What objects are in this image?"
 ```
 Expected Output:
-
 ```css
 This image contains a car and a person.
 ```
