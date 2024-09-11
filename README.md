@@ -14,16 +14,19 @@ Python 3.x
 OpenAI Python API: openai
 Install the required dependencies:
 
-bash
+```bash
 Copy code
 pip install openai argparse
+```
+
 Getting Started
 1. Set up OpenAI API Key
 To authenticate the API, you’ll need to configure your OpenAI API key. Add this in the code where you see openai.OpenAI():
 
-python
+```python
 Copy code
 openai.api_key = 'your-api-key'
+```
 2. Run the Script
 The script supports three types of tasks:
 
@@ -33,60 +36,70 @@ Image Analysis
 Text-to-SQL Translation:
 This function translates a natural language question into an SQL query. To run the translation:
 
-bash
+```bash
 Copy code
 python text_to_sql.py "<natural_language_question>"
+```
 Sentiment Classification:
 This function determines whether the sentiment of the input text is positive or negative. To classify sentiment:
 
-bash
+```bash
 Copy code
 python sentiment_analysis.py "<text_to_classify>"
+```
+
 Image Analysis:
 This function answers questions about images provided via URLs. To analyze an image:
 
-bash
+```bash
 Copy code
 python image_analysis.py "<image_url>" "<question>"
+```
 Code Overview
 1. Text-to-SQL Translation
 The create_prompt function generates a prompt for converting a natural language question into SQL, and the call_llm function sends this prompt to the OpenAI API for translation.
 
-python
+```python
 Copy code
 def create_prompt(question):
     """Creates a prompt for text-to-SQL translation."""
+```
     # SQL prompt generation logic here
 2. Sentiment Classification
 The create_prompt function in the sentiment classification code creates a prompt that queries the sentiment of a given text. The LLM is called using the call_llm function to return the classification.
 
-python
+```python
 Copy code
 def create_prompt(text):
     """Creates input prompt for sentiment analysis."""
+```
     # Sentiment classification prompt generation logic
 3. Image Analysis
 The analyze_image function takes an image URL and a question as input. It sends both to the OpenAI API and retrieves an answer about the image.
 
-python
+```python
 Copy code
 def analyze_image(image_url, question):
     """Answer question about input image."""
+```
     # Multi-modal input handling and LLM call logic
 Example Usage
 Text-to-SQL Example:
-bash
+```bash
 Copy code
 python text_to_sql.py "How many customers are in the city of New York?"
+```
 Expected Output:
 
-sql
+```sql
 Copy code
 SELECT COUNT(*) FROM Customers WHERE City = 'New York';
+```
 Sentiment Classification Example:
-bash
+```bash
 Copy code
 python sentiment_analysis.py "I love this product!"
+```
 Expected Output:
 
 mathematica
