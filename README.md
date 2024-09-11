@@ -1,4 +1,4 @@
-# Muti-Modal-Analysis-AI
+# Multi-Modal-Analysis-AI
 
 This project is a Python-based AI tool for analyzing both text and images using OpenAI’s GPT-4 model. It supports text-to-SQL translations, text sentiment analysis, and image-based question-answering.
 
