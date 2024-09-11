@@ -19,12 +19,14 @@ pip install openai argparse
 ```
 
 ## Getting Started
-1. Set up OpenAI API Key
+
+## 1. Set up OpenAI API Key
 To authenticate the API, you’ll need to configure your OpenAI API key. Add this in the code where you see openai.OpenAI():
 ```python
 openai.api_key = 'your-api-key'
 ```
-2. Run the Script
+
+## 2. Run the Script
 The script supports three types of tasks:
 
 Text-to-SQL Translation
