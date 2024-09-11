@@ -36,7 +36,7 @@ This function translates a natural language question into an SQL query. To run t
 python text_to_sql.py "<natural_language_question>"
 ```
 
-Sentiment Classification:
+## Sentiment Classification:
 This function determines whether the sentiment of the input text is positive or negative. To classify sentiment:
 ```bash
 python sentiment_analysis.py "<text_to_classify>"
@@ -48,16 +48,17 @@ This function answers questions about images provided via URLs. To analyze an im
 ```bash
 python image_analysis.py "<image_url>" "<question>"
 ```
-Code Overview
-1. Text-to-SQL Translation
-The create_prompt function generates a prompt for converting a natural language question into SQL, and the call_llm function sends this prompt to the OpenAI API for translation.
 
+## Code Overview
+
+## 1. Text-to-SQL Translation
+The create_prompt function generates a prompt for converting a natural language question into SQL, and the call_llm function sends this prompt to the OpenAI API for translation.
 ```python
 def create_prompt(question):
     """Creates a prompt for text-to-SQL translation."""
     # SQL prompt generation logic here
 ```
-2. Sentiment Classification
+## 2. Sentiment Classification
 The create_prompt function in the sentiment classification code creates a prompt that queries the sentiment of a given text. The LLM is called using the call_llm function to return the classification.
 ```python
 def create_prompt(text):
@@ -65,7 +66,7 @@ def create_prompt(text):
     # Sentiment classification prompt generation logic
 ```
 
-3. Image Analysis
+## 3. Image Analysis
 The analyze_image function takes an image URL and a question as input. It sends both to the OpenAI API and retrieves an answer about the image.
 ```python
 def analyze_image(image_url, question):
@@ -73,7 +74,7 @@ def analyze_image(image_url, question):
     # Multi-modal input handling and LLM call logic
 ```
 
-Example Usage
+## Example Usage
 Text-to-SQL Example:
 ```bash
 python text_to_sql.py "How many customers are in the city of New York?"
@@ -83,7 +84,7 @@ Expected Output:
 SELECT COUNT(*) FROM Customers WHERE City = 'New York';
 ```
 
-Sentiment Classification Example:
+##Sentiment Classification Example:
 ```bash
 python sentiment_analysis.py "I love this product!"
 ```
@@ -92,19 +93,19 @@ Expected Output:
 Positive
 ```
 
-Image Analysis Example:
+## Image Analysis Example:
 ```bash
 python image_analysis.py "https://example.com/image.jpg" "What objects are in this image?"
 ```
-Expected Output:
+## Expected Output:
 ```css
 This image contains a car and a person.
 ```
 
-Future Improvements
+## Future Improvements
 Error Handling: Add better exception handling for invalid image URLs or poorly formatted text inputs.
 Extended Model Integration: Experiment with other models to enhance the text-to-SQL accuracy and multi-modal processing.
 Additional Analysis Types: Expand the project to include other forms of analysis like video, audio, or 3D data.
 
-License
+## License
 This project is licensed under the MIT License.
