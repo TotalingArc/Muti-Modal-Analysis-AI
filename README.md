@@ -2,18 +2,18 @@
 
 This project is a Python-based AI tool for analyzing both text and images using OpenAI’s GPT-4 model. It supports text-to-SQL translations, text sentiment analysis, and image-based question-answering.
 
-#Features:
+# Features:
 Text-to-SQL Translation: Converts natural language questions into SQL queries.
 Sentiment Classification: Classifies the sentiment of input text as positive or negative.
 Image Analysis: Answers questions about images by processing image URLs and text-based questions.
 Multi-Modal Capability: Combines textual and visual inputs for more comprehensive AI analysis.
 
-#Prerequisites
+# Prerequisites
 Python 3.x
 OpenAI 
 Python API: openai
 
-#Install the required dependencies:
+# Install the required dependencies:
 ```bash
 pip install openai argparse
 ```
