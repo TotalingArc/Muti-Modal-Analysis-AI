@@ -8,7 +8,7 @@ def analyze_image(image_url, question):
     
     Args:
         image_url: URL of image to analyze.
-        question: obtain answer to this question.
+        question: obtain answer to this question..
         
     Returns:
         Answer to input question. 
