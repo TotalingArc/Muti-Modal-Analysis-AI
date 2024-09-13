@@ -86,7 +86,7 @@ Expected Output:
 SELECT COUNT(*) FROM Customers WHERE City = 'New York';
 ```
 
-##Sentiment Classification Example:
+##Sentiment_Classification Example:
 ```bash
 python sentiment_analysis.py "I love this product!"
 ```
