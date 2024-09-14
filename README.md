@@ -33,3 +33,23 @@ You can install the required dependencies with `pip`:
 
 ```bash
 pip install openai
+```
+### Setting Up the Project
+
+## Clone the repository:
+
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
+## Set up a virtual environment (recommended but optional):
+
+```bash
+python3 -m venv venv
+source venv/bin/activate    # For Windows: venv\Scripts\activate
+```
+## Install dependencies:
+
+```bash
+pip install openai
+```
