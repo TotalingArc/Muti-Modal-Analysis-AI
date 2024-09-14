@@ -53,3 +53,59 @@ source venv/bin/activate    # For Windows: venv\Scripts\activate
 ```bash
 pip install openai
 ```
+## Running the Scripts
+1. Audio Transcription (audio.py)
+This script transcribes an audio file using OpenAI’s Whisper model.
+
+## Example Usage:
+
+```bash
+python audio.py <path-to-audio-file>
+Replace <path-to-audio-file> with the actual path to your audio file.
+```
+2. Sentiment Classification (sentiment_classification.py)
+This script classifies the sentiment of the input text as either positive or negative.
+
+## Example Usage:
+
+```bash
+python sentiment_classification.py "This is a great product!"
+```
+3. Image Question Answering (image_qa.py)
+This script answers questions about an image based on its URL.
+
+## Example Usage:
+
+```bash
+python image_qa.py <image-url> "What is in the image?"
+Replace <image-url> with the actual URL of the image and specify the question you want answered.
+```
+4. Natural Language-to-SQL Interface (nlqi.py)
+This script translates a natural language question into a SQL query.
+
+## Example Usage:
+
+```bash
+python nlqi.py "Show me all customers from New York."
+```
+## OpenAI API Key
+All scripts require access to the OpenAI API. To use the OpenAI API, you'll need to set up an API key:
+
+1. Sign up at OpenAI to get your API key.
+2. Set the API key as an environment variable:
+
+```bash
+export OPENAI_API_KEY='your-api-key'  # On Linux/MacOS
+set OPENAI_API_KEY='your-api-key'     # On Windows
+```
+Alternatively, you can modify the code to include your API key directly in the client initialization like this:
+
+```python
+client = openai.OpenAI(api_key='your-api-key')
+```
+
+## Error Handling
+Ensure your input data (such as the audio file path, image URL, and question text) is correct. The scripts rely on accurate inputs and proper formatting to function correctly.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
