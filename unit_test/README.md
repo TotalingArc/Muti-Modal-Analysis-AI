@@ -24,12 +24,12 @@ Before running the unit tests, you need to install the necessary dependencies. T
    ```bash
    python3 -m venv venv
    ```
-   # Install the required dependencies:
+   ### Install the required dependencies:
 
 ```bash
 pip install openai
 ```
-# Install other testing libraries (mocking utilities are part of unittest, which is included in Python standard library).
+## Install other testing libraries (mocking utilities are part of unittest, which is included in Python standard library).
 
 ### Running the Tests
 To run the unit tests for each module, simply use the following command:
@@ -46,15 +46,15 @@ If you'd like to run tests for a specific script (e.g., test_audio.py), you can 
 python -m unittest tests/test_audio.py
 ```
 ## Project Structure
-audio.py: Script for audio transcription.
-sentiment_classification.py: Script for sentiment analysis.
-image_qa.py: Script for image question answering.
-nlqi.py: Script for natural language to SQL query conversion.
-tests/: Directory containing the unit tests for each script.
-test_audio.py: Unit tests for audio.py.
-test_sentiment_classification.py: Unit tests for sentiment_classification.py.
-test_image_qa.py: Unit tests for image_qa.py.
-test_nlqi.py: Unit tests for nlqi.py.
+- 'audio.py': Script for audio transcription.
+- 'sentiment_classification.py': Script for sentiment analysis.
+- 'image_qa.py': Script for image question answering.
+- 'nlqi.py': Script for natural language to SQL query conversion.
+- 'tests/': Directory containing the unit tests for each script.
+  - 'test_audio.py': Unit tests for audio.py.
+  - 'test_sentiment_classification.py': Unit tests for sentiment_classification.py.
+  - 'test_image_qa.py': Unit tests for image_qa.py.
+  - 'test_nlqi.py': Unit tests for nlqi.py.
 
 ## Example Unit Test Execution
 To run the unit tests for the sentiment classification script:
